@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #box{
+            width: 72%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+                }
+        #boxes{
+            width: 19.6%;
+            height: 200px;
+            background-color: BLACK;
+            border: 1px solid #dadada;
+        }
+        #white{
+            width: 19.6%;
+            height: 200px;
+            background-color: white;
+            border: 2px solid #dadada;
+        }
+    </style>
 </head>
 <body>
     
     <div id="box"></div>
+    <p id="count">0</p>
+
     
-    <script src="./app.js"></script>
+    <button onclick="increase()">+</button>
+    <button onclick="decrease()">-</button>
+
+    <div>
+    <span onclick="nightMode()">night </span>
+    <span onclick="lightMode()">light</span>
+</div>
+
+<script src="./practice.js"></script>
+    <!-- <script src="./task2.js"></script> -->
+    <!-- <script src="./app.js"></script> -->
 </body>
 </html>
