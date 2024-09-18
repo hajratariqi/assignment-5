@@ -39,7 +39,7 @@ function findOf(text,searchValue){
     for(var i = 0; i < sentance.length; i++){
      var diff = sentance.slice(i, i + searchValue.length)
      if(diff == searchValue){
-        console.log(i, diff);
+        document.write(i, diff);
         
      }
       
@@ -70,7 +70,7 @@ function charCheck(textLine, isVovel){
         if(isVovel(textLine[i])){
             if(isVovel(textLine[i + 1])){
                 count++
-                console.log('Found a pair:', textLine[i], textLine[i + 1], 'Count:', count);
+                document.write('Found a pair:', textLine[i], textLine[i + 1], 'Count:', count, "<br>");
             }
             
         }
@@ -86,18 +86,46 @@ document.write('<br>','Total number of consecutive vowel pairs:', result,'<br>')
 
 
 // question 5
-function calculateWorked(){
-    var worked = +prompt('Enter a hour of works')
-    var dailyWorkHour = 40
+// function calculateWorked(){
+//     var worked = +prompt('Enter a hour of works')
+//     var dailyWorkHour = 40
 
-    if(worked > 40){
-       var diff = worked - dailyWorkHour
-       var overtimePay = diff * 12
-       return overtimePay
-    }
-}
-var totalResult = calculateWorked()
-console.log(totalResult);
+//     if(worked > 40){
+//        var diff = worked - dailyWorkHour
+//        var overtimePay = diff * 12
+//        return overtimePay
+//     }
+// }
+// var totalResult = calculateWorked()
+// document.write(totalResult);
+
 
 
 // question 6
+function checkVovels(paraLetter){
+    if(paraLetter == 'a' ||paraLetter == 'e' || paraLetter == 'i' ||paraLetter == 'o' ||paraLetter == 'u' ||paraLetter == 'A' ||paraLetter == 'E' ||paraLetter== 'I' ||paraLetter == 'O' ||paraLetter == 'U'){
+        return true
+    }else{ return false}
+} 
+
+function removeVovels(para, Letter){
+    var diff = ''
+    var allVoVels = ''
+
+    if(para.length < 25){
+
+    for(var i = 0; i < para.length; i++){
+        if(Letter(para[i])){
+            
+            // console.log(para.replace(para[i], ''))
+        }else{
+            diff += para[i]
+        }
+    }
+}
+console.log(diff, allVoVels);
+
+
+}
+
+removeVovels('this is a an apple', checkVovels)
