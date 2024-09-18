@@ -86,18 +86,18 @@ document.write('<br>','Total number of consecutive vowel pairs:', result,'<br>')
 
 
 // question 5
-// function calculateWorked(){
-//     var worked = +prompt('Enter a hour of works')
-//     var dailyWorkHour = 40
+function calculateWorked(){
+    var worked = +prompt('Enter a hour of works')
+    var dailyWorkHour = 40
 
-//     if(worked > 40){
-//        var diff = worked - dailyWorkHour
-//        var overtimePay = diff * 12
-//        return overtimePay
-//     }
-// }
-// var totalResult = calculateWorked()
-// document.write(totalResult);
+    if(worked > 40){
+       var diff = worked - dailyWorkHour
+       var overtimePay = diff * 12
+       return overtimePay
+    }
+}
+var totalResult = calculateWorked()
+document.write(totalResult);
 
 
 
@@ -117,13 +117,13 @@ function removeVovels(para, Letter){
     for(var i = 0; i < para.length; i++){
         if(Letter(para[i])){
             
-            // console.log(para.replace(para[i], ''))
+            para.replace(para[i], '')
         }else{
             diff += para[i]
         }
     }
 }
-console.log(diff, allVoVels);
+document.write('vovels remove from sentance ',diff,'<br> <br>');
 
 
 }
