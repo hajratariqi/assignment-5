@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            text-align: center;
-        }
+
         #box{
             width: 72%;
             margin: auto;
@@ -26,11 +24,19 @@
             background-color: white;
             border: 2px solid #dadada;
         }
+        #para{
+            height: 40px;
+            width: 200px;
+            overflow: hidden;
+        }.extend-text{
+            display: flex;
+            align-items: end;
+        }
     </style>
 </head>
 <body>
     
-    <div id="box"></div>
+    <!-- <div id="box"></div>
     <p id="count">0</p>
 
     
@@ -47,15 +53,15 @@
 
 <div style="display: flex; justify-content: space-around;">
     <div style="border: 1px solid #dadada; background-color: rgb(231, 236, 238);" onclick="alert('Thanks for purchasing from us')">
-        <img width="300px" src="https://purepng.com/public/uploads/large/purepng.com-mobile-phone-with-touchmobilemobile-phonehandymobile-devicetouchscreenmobile-phone-device-231519332728kouyj.png" alt="">
+        <img width="100px" src="https://purepng.com/public/uploads/large/purepng.com-mobile-phone-with-touchmobilemobile-phonehandymobile-devicetouchscreenmobile-phone-device-231519332728kouyj.png" alt="">
         <h3>Samsung</h3>
     </div>
     <div style="border: 1px solid #dadada; background-color: rgb(231, 236, 238);" onclick="alert('Thanks for purchasing from us')">
-        <img width="300px" src="https://www.pngarts.com/files/3/Smartphone-Mobile-PNG-Image-Background.png" alt="">
+        <img width="100px" src="https://www.pngarts.com/files/3/Smartphone-Mobile-PNG-Image-Background.png" alt="">
         <h4>Smartphone</h4>
     </div>
     <div style="border: 1px solid #dadada; background-color: rgb(231, 236, 238);" onclick="alert('Thanks for purchasing from us')">
-        <img width="300px" src="https://purepng.com/public/uploads/large/purepng.com-mobile-phone-with-touchmobilemobile-phonehandymobile-devicetouchscreenmobile-phone-device-231519332728kouyj.png" alt="">
+        <img width="100px" src="https://purepng.com/public/uploads/large/purepng.com-mobile-phone-with-touchmobilemobile-phonehandymobile-devicetouchscreenmobile-phone-device-231519332728kouyj.png" alt="">
         <h3>IPhone</h3>
     </div>
 </div>
@@ -86,8 +92,83 @@
     </tr>
 
 </table>
-<img src="https://png.pngtree.com/png-vector/20221119/ourmid/pngtree-closed-wooden-door-design-vector-png-image_6471174.png" width="300px" onmouseover="changedImage(this, event)" onmouseout="changedImage(this, event)" alt="">
+<img src="https://png.pngtree.com/png-vector/20221119/ourmid/pngtree-closed-wooden-door-design-vector-png-image_6471174.png" width="100px" onmouseover="changedImage(this, event)" onmouseout="changedImage(this, event)" alt="">
 
+<br>
+<br>
+
+    <div id=”form-content” >
+    <label for='name'>Name</label>
+    <input type='text' id='name' placeholder="Enter your name"/>
+    <br>
+    <br>
+    <label for='email'>Email</label>
+    <input type='email' id='email' placeholder="Enter your Email"/>
+    <br>
+    <br>
+    <label for='password'>Password</label>
+    <input type='password' id='password' placeholder="Enter your Password"/>
+    <br>
+    <br>
+    <button onclick="submitSignupForm()">Sign Up</button>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="extend-text">
+    <p id="para">This approach improves the user experience by keeping the webpage clean and organized. It prevents overwhelming users with too much information at once.</p>
+    <button onclick="expandText()" id="readMore">read more</button>
+</div> -->
+
+
+
+
+
+
+<br>
+<form action="" id="form">
+    <input type="text" placeholder="Name" id="name">
+<br>
+<br>
+    <input type="text" placeholder="Email" id="email">
+<br>
+<br>
+    <input type="password" placeholder="Password" id="password">
+<br>
+<br>
+<button type="button" onclick="dataSubmit()">Submit</button>
+</form>
+
+<button style="display: none;" onclick="showForm()" id="addTask">Add taask</button>
+
+<table >
+    <tbody id="dataRow">
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./task4.js"></script>
 <script src="./task3.js"></script>
 <!-- <script src="./practice.js"></script> -->
     <!-- <script src="./task2.js"></script> -->
